@@ -8,12 +8,14 @@
 
 import UIKit
 import CoreData
+import Sync
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var dataController: DataController!
+    lazy var dataStack = DataStack(modelName: "Model")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -21,11 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         dataController = DataController() {
             print("Data controller initialized!")
-            let dataHelper = DataHelper(context: self.dataController.managedObjectContext)
-            dataHelper.seedDataStore()
+//            let dataHelper = DataHelper(context: self.dataController.managedObjectContext)
+//            dataHelper.seedDataStore()
+//            UserService(self.dataStack).findById(Int16(1))
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.makeKeyAndVisible()
             
+//            self.window?.rootViewController = LoginViewController()
             self.window?.rootViewController = ViewController()
             
         }

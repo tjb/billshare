@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5757DDF9B33081715475F3 /* Pods_BillShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA7EEAD5E721435F5479360 /* Pods_BillShare.framework */; };
+		1F315B1B1F68C79D0066C579 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F315B1A1F68C79D0066C579 /* UserService.swift */; };
 		1F527E401F5664B700157CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E3F1F5664B700157CDF /* AppDelegate.swift */; };
 		1F527E421F5664B700157CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E411F5664B700157CDF /* ViewController.swift */; };
 		1F527E451F5664B700157CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F527E431F5664B700157CDF /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		1F527E4D1F5664B700157CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F527E4B1F5664B700157CDF /* LaunchScreen.storyboard */; };
 		1F527E581F5664B700157CDF /* BillShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E571F5664B700157CDF /* BillShareTests.swift */; };
 		1F527E631F5664B700157CDF /* BillShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E621F5664B700157CDF /* BillShareUITests.swift */; };
+		1F925ADA1F5F97EE00F14CD2 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F925AD81F5F97EE00F14CD2 /* User+CoreDataClass.swift */; };
+		1F9DFC621F69F7E900545832 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DFC611F69F7E900545832 /* LoginViewController.swift */; };
 		1FB1823C1F5D9B6400E9EA1E /* LineSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1823B1F5D9B6400E9EA1E /* LineSeparator.swift */; };
 		1FB182471F5DF2CA00E9EA1E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB182461F5DF2CA00E9EA1E /* DataController.swift */; };
 		1FB182491F5DF2F500E9EA1E /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB182481F5DF2F500E9EA1E /* DataHelper.swift */; };
@@ -21,6 +25,9 @@
 		1FB182671F5DFD3A00E9EA1E /* Bill+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB182651F5DFD3A00E9EA1E /* Bill+CoreDataClass.swift */; };
 		1FB1826A1F5E02A500E9EA1E /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB182691F5E02A500E9EA1E /* BillViewController.swift */; };
 		1FB1826C1F5E073700E9EA1E /* BillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1826B1F5E073700E9EA1E /* BillCell.swift */; };
+		1FBB35EA1F6599C8001F0705 /* Percentage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB35E81F6599C8001F0705 /* Percentage+CoreDataClass.swift */; };
+		7372F4EA84A41E6925D8426F /* Pods_BillShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72C3BD124EB7096FC7019D1 /* Pods_BillShareTests.framework */; };
+		9C62AA44BB243CE81E52CBA1 /* Pods_BillShareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E4657B25BBA478D0FBFF95 /* Pods_BillShareUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05A4987B01D7816BB8DA8BEC /* Pods-BillShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillShareUITests/Pods-BillShareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F315B1A1F68C79D0066C579 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1F527E3C1F5664B700157CDF /* BillShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F527E3F1F5664B700157CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F527E411F5664B700157CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +63,8 @@
 		1F527E5E1F5664B700157CDF /* BillShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F527E621F5664B700157CDF /* BillShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillShareUITests.swift; sourceTree = "<group>"; };
 		1F527E641F5664B700157CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F925AD81F5F97EE00F14CD2 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1F9DFC611F69F7E900545832 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FB1823B1F5D9B6400E9EA1E /* LineSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSeparator.swift; sourceTree = "<group>"; };
 		1FB182461F5DF2CA00E9EA1E /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1FB182481F5DF2F500E9EA1E /* DataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
@@ -61,6 +72,15 @@
 		1FB182651F5DFD3A00E9EA1E /* Bill+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bill+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1FB182691F5E02A500E9EA1E /* BillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
 		1FB1826B1F5E073700E9EA1E /* BillCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillCell.swift; sourceTree = "<group>"; };
+		1FBB35E81F6599C8001F0705 /* Percentage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Percentage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20E4657B25BBA478D0FBFF95 /* Pods_BillShareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillShareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FACA193BAE4429AC20F878C /* Pods-BillShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillShare/Pods-BillShare.release.xcconfig"; sourceTree = "<group>"; };
+		4C18C3F1C9FD9256056EA37A /* Pods-BillShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillShareTests/Pods-BillShareTests.release.xcconfig"; sourceTree = "<group>"; };
+		52E19BEAFDB77FF5AFECEB5E /* Pods-BillShareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillShareUITests/Pods-BillShareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		885351C0FEC2B4D35486B088 /* Pods-BillShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillShareTests/Pods-BillShareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AA7EEAD5E721435F5479360 /* Pods_BillShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DBE180CAC54F31468F0182E /* Pods-BillShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillShare/Pods-BillShare.debug.xcconfig"; sourceTree = "<group>"; };
+		E72C3BD124EB7096FC7019D1 /* Pods_BillShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5757DDF9B33081715475F3 /* Pods_BillShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7372F4EA84A41E6925D8426F /* Pods_BillShareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,20 +104,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C62AA44BB243CE81E52CBA1 /* Pods_BillShareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F315B191F68C6600066C579 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F315B1A1F68C79D0066C579 /* UserService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		1F527E331F5664B700157CDF = {
 			isa = PBXGroup;
 			children = (
+				1FBB35E81F6599C8001F0705 /* Percentage+CoreDataClass.swift */,
+				1F925AD81F5F97EE00F14CD2 /* User+CoreDataClass.swift */,
 				1FB182651F5DFD3A00E9EA1E /* Bill+CoreDataClass.swift */,
 				1F527E3E1F5664B700157CDF /* BillShare */,
 				1F527E561F5664B700157CDF /* BillShareTests */,
 				1F527E611F5664B700157CDF /* BillShareUITests */,
 				1F527E3D1F5664B700157CDF /* Products */,
+				4B6E42F4579EA3432E397BEF /* Pods */,
+				76E954773390937A8789B566 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +147,11 @@
 		1F527E3E1F5664B700157CDF /* BillShare */ = {
 			isa = PBXGroup;
 			children = (
+				1F9DFC631F69F82500545832 /* Dashboard */,
+				1F9DFC5F1F69F79700545832 /* Login */,
+				1F315B191F68C6600066C579 /* Service */,
 				1FB1824A1F5DF38100E9EA1E /* Model */,
-				1FB1823A1F5D9A8B00E9EA1E /* UI */,
-				1F527E701F5665A700157CDF /* Views */,
+				1FB1823A1F5D9A8B00E9EA1E /* Common */,
 				1F527E3F1F5664B700157CDF /* AppDelegate.swift */,
 				1F527E431F5664B700157CDF /* Main.storyboard */,
 				1F527E491F5664B700157CDF /* Assets.xcassets */,
@@ -154,12 +191,36 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		1FB1823A1F5D9A8B00E9EA1E /* UI */ = {
+		1F9DFC5F1F69F79700545832 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1F9DFC601F69F79D00545832 /* Views */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1F9DFC601F69F79D00545832 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F9DFC611F69F7E900545832 /* LoginViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F9DFC631F69F82500545832 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1F527E701F5665A700157CDF /* Views */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		1FB1823A1F5D9A8B00E9EA1E /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				1FB1823B1F5D9B6400E9EA1E /* LineSeparator.swift */,
 			);
-			name = UI;
+			name = Common;
 			sourceTree = "<group>";
 		};
 		1FB1824A1F5DF38100E9EA1E /* Model */ = {
@@ -170,6 +231,29 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		4B6E42F4579EA3432E397BEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DBE180CAC54F31468F0182E /* Pods-BillShare.debug.xcconfig */,
+				3FACA193BAE4429AC20F878C /* Pods-BillShare.release.xcconfig */,
+				885351C0FEC2B4D35486B088 /* Pods-BillShareTests.debug.xcconfig */,
+				4C18C3F1C9FD9256056EA37A /* Pods-BillShareTests.release.xcconfig */,
+				52E19BEAFDB77FF5AFECEB5E /* Pods-BillShareUITests.debug.xcconfig */,
+				05A4987B01D7816BB8DA8BEC /* Pods-BillShareUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76E954773390937A8789B566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7EEAD5E721435F5479360 /* Pods_BillShare.framework */,
+				E72C3BD124EB7096FC7019D1 /* Pods_BillShareTests.framework */,
+				20E4657B25BBA478D0FBFF95 /* Pods_BillShareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F527E671F5664B700157CDF /* Build configuration list for PBXNativeTarget "BillShare" */;
 			buildPhases = (
+				6E34980488E88D7FFC07820D /* [CP] Check Pods Manifest.lock */,
 				1F527E381F5664B700157CDF /* Sources */,
 				1F527E391F5664B700157CDF /* Frameworks */,
 				1F527E3A1F5664B700157CDF /* Resources */,
+				58C2BB6014DD49A8FDE5C2F1 /* [CP] Embed Pods Frameworks */,
+				C66BCB60D18C258681FE11BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F527E6A1F5664B700157CDF /* Build configuration list for PBXNativeTarget "BillShareTests" */;
 			buildPhases = (
+				4AF4859D1131373354818E06 /* [CP] Check Pods Manifest.lock */,
 				1F527E4F1F5664B700157CDF /* Sources */,
 				1F527E501F5664B700157CDF /* Frameworks */,
 				1F527E511F5664B700157CDF /* Resources */,
+				6257E16A53A4515D3848732B /* [CP] Embed Pods Frameworks */,
+				A0E3CCFF29E2019DA8CB53B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,9 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F527E6D1F5664B700157CDF /* Build configuration list for PBXNativeTarget "BillShareUITests" */;
 			buildPhases = (
+				B4653DEC353B36675F306A42 /* [CP] Check Pods Manifest.lock */,
 				1F527E5A1F5664B700157CDF /* Sources */,
 				1F527E5B1F5664B700157CDF /* Frameworks */,
 				1F527E5C1F5664B700157CDF /* Resources */,
+				F9D968CBB15C6DAAC2B47542 /* [CP] Embed Pods Frameworks */,
+				669CA7885FC3A5F61FF8CB9E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +393,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AF4859D1131373354818E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58C2BB6014DD49A8FDE5C2F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillShare/Pods-BillShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6257E16A53A4515D3848732B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillShareTests/Pods-BillShareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669CA7885FC3A5F61FF8CB9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillShareUITests/Pods-BillShareUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E34980488E88D7FFC07820D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E3CCFF29E2019DA8CB53B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillShareTests/Pods-BillShareTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4653DEC353B36675F306A42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C66BCB60D18C258681FE11BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillShare/Pods-BillShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D968CBB15C6DAAC2B47542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillShareUITests/Pods-BillShareUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F527E381F5664B700157CDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,11 +540,15 @@
 				1FB182671F5DFD3A00E9EA1E /* Bill+CoreDataClass.swift in Sources */,
 				1FB182471F5DF2CA00E9EA1E /* DataController.swift in Sources */,
 				1F527E421F5664B700157CDF /* ViewController.swift in Sources */,
+				1F925ADA1F5F97EE00F14CD2 /* User+CoreDataClass.swift in Sources */,
 				1F527E401F5664B700157CDF /* AppDelegate.swift in Sources */,
 				1FB182491F5DF2F500E9EA1E /* DataHelper.swift in Sources */,
 				1FB1826C1F5E073700E9EA1E /* BillCell.swift in Sources */,
+				1F315B1B1F68C79D0066C579 /* UserService.swift in Sources */,
 				1FB1823C1F5D9B6400E9EA1E /* LineSeparator.swift in Sources */,
 				1FB182601F5DFB1800E9EA1E /* Model.xcdatamodeld in Sources */,
+				1F9DFC621F69F7E900545832 /* LoginViewController.swift in Sources */,
+				1FBB35EA1F6599C8001F0705 /* Percentage+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +698,7 @@
 		};
 		1F527E681F5664B700157CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DBE180CAC54F31468F0182E /* Pods-BillShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VN7BJ69MPV;
@@ -476,6 +712,7 @@
 		};
 		1F527E691F5664B700157CDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FACA193BAE4429AC20F878C /* Pods-BillShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VN7BJ69MPV;
@@ -489,6 +726,7 @@
 		};
 		1F527E6B1F5664B700157CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885351C0FEC2B4D35486B088 /* Pods-BillShareTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +741,7 @@
 		};
 		1F527E6C1F5664B700157CDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C18C3F1C9FD9256056EA37A /* Pods-BillShareTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +756,7 @@
 		};
 		1F527E6E1F5664B700157CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E19BEAFDB77FF5AFECEB5E /* Pods-BillShareUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BillShareUITests/Info.plist;
@@ -530,6 +770,7 @@
 		};
 		1F527E6F1F5664B700157CDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A4987B01D7816BB8DA8BEC /* Pods-BillShareUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BillShareUITests/Info.plist;

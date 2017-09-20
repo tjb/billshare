@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Sync (3.2.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Sync (~> 3.2.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Sync: 03025d09bfa014ee92e8a6da238a758196ce9cfe
+
+PODFILE CHECKSUM: f63cee6fd6395934662029e659c656cc26ef08bc
+
+COCOAPODS: 1.2.1

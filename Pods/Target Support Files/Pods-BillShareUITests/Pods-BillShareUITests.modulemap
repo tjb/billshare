@@ -1,0 +1,6 @@
+framework module Pods_BillShareUITests {
+  umbrella header "Pods-BillShareUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

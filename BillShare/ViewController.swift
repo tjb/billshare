@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
+    
+    var bills: [Bill] = []
+    let billsFetch: NSFetchRequest<Bill> = NSFetchRequest<Bill>(entityName: "Bill")
+    var totalMonthlyAmountLabel: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        setupViews()
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let moc = appDelegate.dataController.managedObjectContext
+
+        do {
+            let fetchedBills = try moc.fetch(billsFetch)
+            bills = fetchedBills
+            initLabels()
+            setupViews()
+        } catch {
+            fatalError("Failed to fetch bills: \(error)")
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,14 +38,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let totalMonthlyAmountLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Main Text"
-        label.textAlignment = NSTextAlignment.center
-        label.font = label.font.withSize(28)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    func initLabels() {
+        self.totalMonthlyAmountLabel = {
+            let label = UILabel()
+            label.text = Double().currencyFormatter(value: self.calculateTotalOwed(self.bills))
+            label.textAlignment = NSTextAlignment.center
+            label.font = label.font.withSize(28)
+            label.translatesAutoresizingMaskIntoConstraints = false
+            return label
+        }()
+    }
     
     
     func setupViews() {
@@ -47,9 +65,9 @@ class ViewController: UIViewController {
             self.addChildViewController(collectionVC)
             self.view.addSubview(collectionVC.collectionView)
             self.view.addSubview(line)
-            self.view.addSubview(self.totalMonthlyAmountLabel)
+            self.view.addSubview(self.totalMonthlyAmountLabel!)
             collectionVC.didMove(toParentViewController: self)
-            self.setSubViewConstraints(["mainLabel": self.totalMonthlyAmountLabel, "line": line, "billCV": collectionVC.collectionView])
+            self.setSubViewConstraints(["mainLabel": self.totalMonthlyAmountLabel!, "line": line, "billCV": collectionVC.collectionView])
         }
     }
     
@@ -58,6 +76,18 @@ class ViewController: UIViewController {
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[line]-|", options: NSLayoutFormatOptions(), metrics: nil, views: mainViews))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[billCV]-|", options: NSLayoutFormatOptions(), metrics: nil, views: mainViews))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-50-[mainLabel]-15-[line(1)]-15-[billCV]-10-|", options: NSLayoutFormatOptions(), metrics: nil, views: mainViews))
+        
+    }
+    
+    private func calculateTotalOwed(_ bills: [Bill]) -> Double {
+        
+        return bills.map({ (bill: Bill) -> Double in
+            if let percent = bill.percentages?.first,
+               let amount = Double().getProperAmountDue(price: bill.price, percentage: percent) {
+                return amount
+            }
+            return 0.0
+        }).reduce(0, {$0 + $1})
         
     }
 

@@ -32,7 +32,7 @@ class BillCell: UICollectionViewCell {
     private func setupViews() {
         self.companyLabel = {
             let companyLabel = UILabel()
-            companyLabel.text = self.bill?.company
+            companyLabel.text = self.bill?.name
             companyLabel.textAlignment = .left
             companyLabel.translatesAutoresizingMaskIntoConstraints = false
             return companyLabel
@@ -49,8 +49,10 @@ class BillCell: UICollectionViewCell {
         
         self.amountDueLabel = {
             let amountDueLabel = UILabel()
-            if let amountDue = self.bill?.amount {
-                amountDueLabel.text = currencyFormatter(value: amountDue)
+            if let price = self.bill?.price,
+                let percentage = self.bill?.percentages?.first,
+                let amountDue = Double().getProperAmountDue(price: price, percentage: percentage)  {
+                amountDueLabel.text = Double().currencyFormatter(value: amountDue)
             }
             amountDueLabel.textAlignment = .center
             amountDueLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -84,16 +86,6 @@ class BillCell: UICollectionViewCell {
         return 0
     }
     
-    private func currencyFormatter(value: Double) -> String {
-        let formatter = NumberFormatter()
-        formatter.locale = Locale.current
-        formatter.numberStyle = .currency
-        if let amount = formatter.string(from: value as NSNumber) {
-            return amount
-        }
-        return "$0.00"
-    }
-    
 }
 
 extension Date {
@@ -107,4 +99,31 @@ extension Date {
         
         return end - start
     }
+    
+}
+
+extension Double {
+    
+    func currencyFormatter(value: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .currency
+        if let amount = formatter.string(from: value as NSNumber) {
+            return amount
+        }
+        return "$0.00"
+    }
+    
+    func getProperAmountDue(price: Double, percentage: Percentage) -> Double? {
+        // wtf is this shit
+        if let percent = percentage.percentage?.doubleValue {
+            var toMultiple = percent
+            var toPay = price
+            toMultiple.divide(by: Double(100.00))
+            toPay.multiply(by: toMultiple)
+            return toPay
+        }
+        return 0.00
+    }
+    
 }

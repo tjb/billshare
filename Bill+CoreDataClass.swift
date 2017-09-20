@@ -15,8 +15,10 @@ public class Bill: NSManagedObject {
         return NSFetchRequest<Bill>(entityName: "Bill")
     }
     
-    @NSManaged public var amount: Double
-    @NSManaged public var company: String?
+    @NSManaged public var price: Double
+    @NSManaged public var name: String?
     @NSManaged public var dueDate: Date
+    @NSManaged public var id: Int16
+    @NSManaged public var percentages: Set<Percentage>?
 
 }
