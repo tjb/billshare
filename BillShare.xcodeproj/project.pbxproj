@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A5757DDF9B33081715475F3 /* Pods_BillShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA7EEAD5E721435F5479360 /* Pods_BillShare.framework */; };
+		1F0461A91F800DD500C4DDAF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461A81F800DD500C4DDAF /* OnboardingViewController.swift */; };
+		1F0461AD1F808ED000C4DDAF /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461AC1F808ED000C4DDAF /* TokenService.swift */; };
+		1F0461B11F81437600C4DDAF /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461B01F81437600C4DDAF /* UserAccount.swift */; };
 		1F315B1B1F68C79D0066C579 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F315B1A1F68C79D0066C579 /* UserService.swift */; };
 		1F527E401F5664B700157CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E3F1F5664B700157CDF /* AppDelegate.swift */; };
 		1F527E421F5664B700157CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E411F5664B700157CDF /* ViewController.swift */; };
@@ -16,6 +19,7 @@
 		1F527E4D1F5664B700157CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F527E4B1F5664B700157CDF /* LaunchScreen.storyboard */; };
 		1F527E581F5664B700157CDF /* BillShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E571F5664B700157CDF /* BillShareTests.swift */; };
 		1F527E631F5664B700157CDF /* BillShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E621F5664B700157CDF /* BillShareUITests.swift */; };
+		1F65FEEE1F76BAF5009CA0D1 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65FEED1F76BAF5009CA0D1 /* LoginService.swift */; };
 		1F925ADA1F5F97EE00F14CD2 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F925AD81F5F97EE00F14CD2 /* User+CoreDataClass.swift */; };
 		1F9DFC621F69F7E900545832 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DFC611F69F7E900545832 /* LoginViewController.swift */; };
 		1FB1823C1F5D9B6400E9EA1E /* LineSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1823B1F5D9B6400E9EA1E /* LineSeparator.swift */; };
@@ -49,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		05A4987B01D7816BB8DA8BEC /* Pods-BillShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillShareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillShareUITests/Pods-BillShareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F0461A81F800DD500C4DDAF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1F0461AC1F808ED000C4DDAF /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		1F0461B01F81437600C4DDAF /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		1F315B1A1F68C79D0066C579 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1F527E3C1F5664B700157CDF /* BillShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F527E3F1F5664B700157CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 		1F527E5E1F5664B700157CDF /* BillShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F527E621F5664B700157CDF /* BillShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillShareUITests.swift; sourceTree = "<group>"; };
 		1F527E641F5664B700157CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F65FEED1F76BAF5009CA0D1 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		1F925AD81F5F97EE00F14CD2 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1F9DFC611F69F7E900545832 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FB1823B1F5D9B6400E9EA1E /* LineSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSeparator.swift; sourceTree = "<group>"; };
@@ -111,6 +119,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0461A61F800B8D00C4DDAF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1F0461A71F800B9A00C4DDAF /* Views */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		1F0461A71F800B9A00C4DDAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F0461A81F800DD500C4DDAF /* OnboardingViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F0461AA1F808EB100C4DDAF /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				1F0461AC1F808ED000C4DDAF /* TokenService.swift */,
+			);
+			name = Token;
+			sourceTree = "<group>";
+		};
+		1F0461AE1F8139B800C4DDAF /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
+		1F0461AF1F81435600C4DDAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F0461B01F81437600C4DDAF /* UserAccount.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		1F315B191F68C6600066C579 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +194,7 @@
 		1F527E3E1F5664B700157CDF /* BillShare */ = {
 			isa = PBXGroup;
 			children = (
+				1F0461A61F800B8D00C4DDAF /* Onboarding */,
 				1F9DFC631F69F82500545832 /* Dashboard */,
 				1F9DFC5F1F69F79700545832 /* Login */,
 				1F315B191F68C6600066C579 /* Service */,
@@ -191,9 +239,19 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		1F65FEE91F76BAB0009CA0D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F65FEED1F76BAF5009CA0D1 /* LoginService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		1F9DFC5F1F69F79700545832 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1F0461AF1F81435600C4DDAF /* Model */,
+				1F65FEE91F76BAB0009CA0D1 /* Service */,
 				1F9DFC601F69F79D00545832 /* Views */,
 			);
 			name = Login;
@@ -218,6 +276,8 @@
 		1FB1823A1F5D9A8B00E9EA1E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1F0461AE1F8139B800C4DDAF /* Alert */,
+				1F0461AA1F808EB100C4DDAF /* Token */,
 				1FB1823B1F5D9B6400E9EA1E /* LineSeparator.swift */,
 			);
 			name = Common;
@@ -326,12 +386,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Tyler Bobella";
 				TargetAttributes = {
 					1F527E3B1F5664B700157CDF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = VN7BJ69MPV;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					1F527E521F5664B700157CDF = {
@@ -400,13 +461,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BillShareTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		58C2BB6014DD49A8FDE5C2F1 /* [CP] Embed Pods Frameworks */ = {
@@ -415,9 +479,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BillShare/Pods-BillShare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -460,13 +531,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BillShare-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0E3CCFF29E2019DA8CB53B3 /* [CP] Copy Pods Resources */ = {
@@ -490,13 +564,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BillShareUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C66BCB60D18C258681FE11BB /* [CP] Copy Pods Resources */ = {
@@ -543,12 +620,16 @@
 				1F925ADA1F5F97EE00F14CD2 /* User+CoreDataClass.swift in Sources */,
 				1F527E401F5664B700157CDF /* AppDelegate.swift in Sources */,
 				1FB182491F5DF2F500E9EA1E /* DataHelper.swift in Sources */,
+				1F0461A91F800DD500C4DDAF /* OnboardingViewController.swift in Sources */,
+				1F0461B11F81437600C4DDAF /* UserAccount.swift in Sources */,
 				1FB1826C1F5E073700E9EA1E /* BillCell.swift in Sources */,
 				1F315B1B1F68C79D0066C579 /* UserService.swift in Sources */,
 				1FB1823C1F5D9B6400E9EA1E /* LineSeparator.swift in Sources */,
 				1FB182601F5DFB1800E9EA1E /* Model.xcdatamodeld in Sources */,
 				1F9DFC621F69F7E900545832 /* LoginViewController.swift in Sources */,
 				1FBB35EA1F6599C8001F0705 /* Percentage+CoreDataClass.swift in Sources */,
+				1F65FEEE1F76BAF5009CA0D1 /* LoginService.swift in Sources */,
+				1F0461AD1F808ED000C4DDAF /* TokenService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +694,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -621,7 +704,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -663,7 +750,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -671,7 +760,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -701,11 +794,13 @@
 			baseConfigurationReference = 8DBE180CAC54F31468F0182E /* Pods-BillShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VN7BJ69MPV;
 				INFOPLIST_FILE = BillShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tjb.BillShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -715,6 +810,7 @@
 			baseConfigurationReference = 3FACA193BAE4429AC20F878C /* Pods-BillShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VN7BJ69MPV;
 				INFOPLIST_FILE = BillShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
