@@ -10,6 +10,7 @@ target 'BillShare' do
   pod 'Sync', '~> 3.2.2'
   pod 'Alamofire', '~> 4.5'
   pod 'Locksmith'
+  pod 'SideMenu'
 
   target 'BillShareTests' do
     inherit! :search_paths

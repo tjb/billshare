@@ -11,6 +11,9 @@
 		1F0461A91F800DD500C4DDAF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461A81F800DD500C4DDAF /* OnboardingViewController.swift */; };
 		1F0461AD1F808ED000C4DDAF /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461AC1F808ED000C4DDAF /* TokenService.swift */; };
 		1F0461B11F81437600C4DDAF /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461B01F81437600C4DDAF /* UserAccount.swift */; };
+		1F0461B31F81C26000C4DDAF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461B21F81C26000C4DDAF /* MenuViewController.swift */; };
+		1F0461B61F81D3C800C4DDAF /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461B51F81D3C800C4DDAF /* MenuListViewController.swift */; };
+		1F0461B81F81DD5D00C4DDAF /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0461B71F81DD5D00C4DDAF /* MenuCell.swift */; };
 		1F315B1B1F68C79D0066C579 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F315B1A1F68C79D0066C579 /* UserService.swift */; };
 		1F527E401F5664B700157CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E3F1F5664B700157CDF /* AppDelegate.swift */; };
 		1F527E421F5664B700157CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F527E411F5664B700157CDF /* ViewController.swift */; };
@@ -56,6 +59,9 @@
 		1F0461A81F800DD500C4DDAF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1F0461AC1F808ED000C4DDAF /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 		1F0461B01F81437600C4DDAF /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		1F0461B21F81C26000C4DDAF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1F0461B51F81D3C800C4DDAF /* MenuListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
+		1F0461B71F81DD5D00C4DDAF /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		1F315B1A1F68C79D0066C579 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1F527E3C1F5664B700157CDF /* BillShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F527E3F1F5664B700157CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +164,16 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		1F0461B41F81D1F900C4DDAF /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1F0461B21F81C26000C4DDAF /* MenuViewController.swift */,
+				1F0461B51F81D3C800C4DDAF /* MenuListViewController.swift */,
+				1F0461B71F81DD5D00C4DDAF /* MenuCell.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		1F315B191F68C6600066C579 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +248,7 @@
 		1F527E701F5665A700157CDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F0461B41F81D1F900C4DDAF /* Menu */,
 				1F527E411F5664B700157CDF /* ViewController.swift */,
 				1FB182691F5E02A500E9EA1E /* BillViewController.swift */,
 				1FB1826B1F5E073700E9EA1E /* BillCell.swift */,
@@ -482,12 +499,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BillShare/Pods-BillShare-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,15 +638,18 @@
 				1F527E421F5664B700157CDF /* ViewController.swift in Sources */,
 				1F925ADA1F5F97EE00F14CD2 /* User+CoreDataClass.swift in Sources */,
 				1F527E401F5664B700157CDF /* AppDelegate.swift in Sources */,
+				1F0461B81F81DD5D00C4DDAF /* MenuCell.swift in Sources */,
 				1FB182491F5DF2F500E9EA1E /* DataHelper.swift in Sources */,
 				1F0461A91F800DD500C4DDAF /* OnboardingViewController.swift in Sources */,
 				1F0461B11F81437600C4DDAF /* UserAccount.swift in Sources */,
 				1FB1826C1F5E073700E9EA1E /* BillCell.swift in Sources */,
+				1F0461B61F81D3C800C4DDAF /* MenuListViewController.swift in Sources */,
 				1F315B1B1F68C79D0066C579 /* UserService.swift in Sources */,
 				1FB1823C1F5D9B6400E9EA1E /* LineSeparator.swift in Sources */,
 				1FB182601F5DFB1800E9EA1E /* Model.xcdatamodeld in Sources */,
 				1F9DFC621F69F7E900545832 /* LoginViewController.swift in Sources */,
 				1FBB35EA1F6599C8001F0705 /* Percentage+CoreDataClass.swift in Sources */,
+				1F0461B31F81C26000C4DDAF /* MenuViewController.swift in Sources */,
 				1F65FEEE1F76BAF5009CA0D1 /* LoginService.swift in Sources */,
 				1F0461AD1F808ED000C4DDAF /* TokenService.swift in Sources */,
 			);

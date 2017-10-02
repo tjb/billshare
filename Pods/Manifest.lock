@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.5.1)
   - Locksmith (3.0.0)
+  - SideMenu (2.3.3)
   - Sync (3.2.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Locksmith
+  - SideMenu
   - Sync (~> 3.2.2)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
+  SideMenu: a447554ae5c982e8077666389e1c8b0c8656e065
   Sync: 03025d09bfa014ee92e8a6da238a758196ce9cfe
 
-PODFILE CHECKSUM: 23e04d51e7a61f0f3bd76c3422b8dc96135331f9
+PODFILE CHECKSUM: ca62b61abb4a8d7932d70877421419ddef806f10
 
 COCOAPODS: 1.3.1
